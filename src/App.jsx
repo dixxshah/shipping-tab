@@ -4,12 +4,12 @@ const AZURE_FUNCTION_URL = "https://shah-shipping-classifier.azurewebsites.net/a
 const FUNCTION_API_KEY = "shah-trading-2026";
 
 const CATEGORIES = {
-  INVOICE:   { label: "Commercial Invoice",     color: "#1a56db", bg: "#eff6ff", border: "#bfdbfe" },
-  BOL:       { label: "Bill of Lading",          color: "#0891b2", bg: "#ecfeff", border: "#a5f3fc" },
-  COA:       { label: "Certificate of Analysis", color: "#059669", bg: "#f0fdf4", border: "#a7f3d0" },
-  QA:        { label: "Other QA Docs",           color: "#7c3aed", bg: "#f5f3ff", border: "#ddd6fe" },
-  LOGISTICS: { label: "Other Logistics Docs",    color: "#b45309", bg: "#fffbeb", border: "#fde68a" },
-  MISC:      { label: "Misc",                    color: "#6b7280", bg: "#f9fafb", border: "#e5e7eb" },
+  "1_Commercial_Invoice":      { label: "Commercial Invoice",     color: "#1a56db", bg: "#eff6ff", border: "#bfdbfe" },
+  "2_Bill_of_Lading":          { label: "Bill of Lading",          color: "#0891b2", bg: "#ecfeff", border: "#a5f3fc" },
+  "3_Certificate_of_Analysis": { label: "Certificate of Analysis", color: "#059669", bg: "#f0fdf4", border: "#a7f3d0" },
+  "4_Logistics_Docs":          { label: "Other Logistics Docs",    color: "#b45309", bg: "#fffbeb", border: "#fde68a" },
+  "5_QA_Documents":            { label: "Other QA Docs",           color: "#7c3aed", bg: "#f5f3ff", border: "#ddd6fe" },
+  "6_Miscellaneous":           { label: "Misc",                    color: "#6b7280", bg: "#f9fafb", border: "#e5e7eb" },
 };
 
 function downloadPdf(base64, filename) {
